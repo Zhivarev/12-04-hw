@@ -11,11 +11,11 @@ JOIN address a  ON s.address_id = a.address_id
 JOIN city c  ON a.city_id = c.city_id 
 JOIN store s2 ON s2.store_id = s.store_id 
 JOIN customer c2 ON s2.store_id = c2.store_id 
-GROUP BY s.first_name , s.last_name , c.city 
+GROUP BY s.staff_id 
 HAVING Количество > 300;
 ```
 
-![IDE DBeaver](img/12.04-01.png)
+![IDE DBeaver](img/12.04-001.png)
 
 
 ---
